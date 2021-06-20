@@ -5,12 +5,133 @@
     height: auto;
 }
 
-.slider-intro {
+#slider-intro {
     height: calc(95vh - 65px);
     width: 100%;
 }
 
-.video-box {
+#new-models {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    background-color: teal;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slider .current {
+    opacity: 1;
+}
+
+.slide .content {
+    width:600px;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    left: calc(0px - 600px);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+.slider .current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: 0.3s ease-in-out;
+}
+
+.slide .content h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 10px;
+}
+
+#prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 10px;
+}
+
+.button {
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    height:50px;
+    line-height: 50px;
+    border-radius:25px;
+    background: none;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.slide:first-child {
+    background-image: url('../img/slider/volkswagen-golf-8-slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-child(2) {
+    background-image: url('../img/slider/volkswagen-technologies-slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background-image: url('../img/slider/volkswagen-passat-2018-slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-child(4) {
+    background-image: url('../img/slider/service-slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide:nth-child(5) {
+    background-image: url('../img/slider/volkswagen-tiguan-slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 970px) {
+    .slide .content {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slide .content {
+        width: 100vw;
+        bottom: 0;
+    }
 }
