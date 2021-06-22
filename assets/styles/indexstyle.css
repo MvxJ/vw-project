@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .main {
     position: relative;
     top: 65px;
@@ -14,6 +18,67 @@
     width: 100%;
     height: 100vh;
     background-color: teal;
+}
+
+#brand {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.brand-description {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 600px;
+}
+
+.brand-info {
+    width: 40%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.brand-info h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.brand-info h3 span {
+    font-weight: 600;
+}
+
+.brand-info a{
+    color: #242525;
+    border: 1px solid #242525;
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: calc(50% - 150px);
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.brand-info a:hover {
+    background-color: #242525;
+    color: #fff;
+}
+
+.brand-banner {
+    width: 40%;
+    background-image: url('/assets/img/index/vw-pickle-brand.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.brand-banner:hover {
+    transform: scale(1.03);
 }
 
 .slider {
@@ -126,6 +191,23 @@
 @media screen and (max-width: 970px) {
     .slide .content {
         width: 50vw;
+    }
+
+    .brand-description {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-info {
+        width: 100%;
+    }
+
+    .brand-banner {
+        width: 90%;
+        height: 300px;
+        padding: 15px;
+        margin-bottom: 15px;
     }
 }
 
