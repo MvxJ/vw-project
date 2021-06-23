@@ -15,9 +15,101 @@ body {
 }
 
 #new-models {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#new-models h2 {
+    margin-top: 25px;
+    text-align: center;
+    display: block;
     width: 100%;
-    height: 100vh;
-    background-color: teal;
+    padding: 15px;
+    font-size: 38px;
+    font-weight: 100;
+}
+
+#new-models .models-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 400px;
+}
+
+#new-models .models-container .model-column {
+    width: 45%;
+    min-height: 400px;
+}
+
+#new-models .models-container .model-column .model-small {
+    width: 100%;
+    height:190px;
+    display: flex;
+}
+
+#new-models .models-container .model-column .model-big {
+    width: 100%;
+    height: 100%;
+}
+
+.models-description p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.models-description a {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #242525;
+    display: block;
+    text-align: center;
+    margin-left: calc(50% - 100px);
+    text-decoration: none;
+    color: #242525;
+    transition: all 0.3s ease-in-out;
+}
+
+#model-golf-8{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/index/models-volkswagen-golf-8.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.models-description a:hover {
+    background-color: #242525;
+    color: #fff;
+}
+
+#second {
+    margin-top: 20px;
+}
+
+.models-description {
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+}
+
+#models-volkswagen-passat {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/index/model-volkswagen-passat-2020.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#models-volkswagen-tiguan {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/index/model-volkswagen-tiguan-2020.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 #brand {
@@ -32,6 +124,34 @@ body {
     justify-content: space-around;
     width: 100%;
     min-height: 600px;
+}
+
+.models-description-big {
+    width: 100%;
+    padding: 15px;
+}
+
+.models-description-big p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.models-description-big a {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #242525;
+    display: block;
+    text-align: center;
+    margin-left: calc(50% - 100px);
+    text-decoration: none;
+    color: #242525;
+    transition: all 0.3s ease-in-out;
+}
+
+.models-description-big a:hover {
+    background-color: #242525;
+    color: #fff;
 }
 
 .brand-info {
@@ -209,11 +329,41 @@ body {
         padding: 15px;
         margin-bottom: 15px;
     }
+
+    #model-golf-8 {
+        width: 100%;
+    }
+
+    #new-models .models-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #new-models .models-container .model-column {
+        width: 100%;
+    }
+
+    #new-models {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .slide .content {
         width: 100vw;
         bottom: 0;
+    }
+    #new-models .models-container .model-column .model-small {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .models-description a {
+        width: 100px;
+        margin-left: calc(50% - 50px);
     }
 }
