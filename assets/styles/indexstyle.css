@@ -313,16 +313,6 @@ body {
     background-size: cover;
 }
 
-#test-drive {
-    width: 100%;
-    min-height: 400px;
-    height: auto;
-    background-color: #242525;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
 #news {
     width: 100vw;
     min-height: 100vh;

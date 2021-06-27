@@ -1,0 +1,96 @@
+body {
+    overflow-x: hidden;
+}
+
+#about-brand-intro {
+    position: relative;
+    top: 65px;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-brand-intro .about-brand-history {
+    width:40%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#about-brand-intro .about-brand-history h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#about-brand-intro .about-brand-history p {
+    text-align: justify;
+}
+
+#about-brand-intro .about-brand-history img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#about-brand-intro .about-brand-history img:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#animation {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    padding: 15px;
+    border:1px solid red;
+    margin-top: 65px;
+}
+
+#brands {
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#brands .brands-container {
+    width: 40%;
+    height: 500px;
+}
+
+#brands .brands-container h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#brands .brands-container .brand-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#brands .brands-container .brand-row.firs-row {
+    margin-top: 20px;
+}
+
+#brands .brands-container .brand-row .brand-col-logo {
+    width: 20%;
+    height: 125px;
+    margin-bottom: 40px;
+}
+
+#brands .brands-container .brand-row .brand-col-logo img {
+    width:90%;
+    max-height: 100%;
+    margin-left: 5%;
+}
+
+#brands .brands-container .brand-row .brand-col-logo .img-m-top {
+    margin-top: 15%;
+}
