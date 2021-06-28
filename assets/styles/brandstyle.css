@@ -42,26 +42,59 @@ body {
 
 #animation {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: auto;
     min-height: 80vh;
     padding: 15px;
     border:1px solid red;
     margin-top: 65px;
+    align-items: center;
+}
+
+#animation .animation-wraper {
+    width: 900px;
+    height: 600px;
+    background-image: url('/assets/img/animation/Img_1.png');
+    background-position: center;
+    background-size: contain;
+    box-shadow:1px 2px 60px rgba(0,0,0 ,0.4);
+    position: relative;
+    overflow-x: hidden;
+}
+
+#animation .animation-wraper .surface {
+    height: 140px;
+    width: 500%;
+    background-image: url('/assets/img/animation/Img_02.png');
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    animation: moveCar 6s linear infinite;
+}
+#animation .animation-wraper .car-image {
+    position: absolute;
+    bottom: 7%;
+    left: 24%;
+    animation: suspennsion 1s linear infinite;
 }
 
 #brands {
     width: 100vw;
-    min-height: 80vh;
     height: auto;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 15px;
 }
 
 #brands .brands-container {
     width: 40%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
 }
 
 #brands .brands-container h3 {
@@ -93,4 +126,55 @@ body {
 
 #brands .brands-container .brand-row .brand-col-logo .img-m-top {
     margin-top: 15%;
+}
+
+@keyframes moveCar {
+    100% {
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes suspennsion {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #about-brand-intro {
+        flex-direction: column;
+    }
+
+    #about-brand-intro .about-brand-history {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    #about-brand-intro .about-brand-history h3 {
+        margin-top: 50px;
+    }
+
+    #about-brand-intro .about-brand-history img {
+        margin-top: 15px;
+    }
+
+    #brands {
+        flex-direction: column-reverse;
+    }
+
+    #brands .brands-container {
+        width: 100%;
+        min-height: 200px;
+        margin-top: 25px;
+    }
+    #brands .brands-container h3 {
+        margin-top: 25px;
+    }
 }
