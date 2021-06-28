@@ -1,0 +1,233 @@
+body {
+    overflow-x: hidden;
+}
+
+#concept-banner {
+    position: relative;
+    top: 65px;
+    width: 100vw;
+    height: 95vh;
+    background-image: url('/assets/img/concept/volkswagen-id-buzz-banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#concept-banner .cocnept-header h3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 100;
+    width: 400px;
+}
+
+#concept-banner .concept-borders {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 190px;
+    height: 90%;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#concept-banner .button-lern-more {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: 35px;
+    margin-left: calc(50% - 50px);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+}
+
+#concept-banner .button-lern-more:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+    color: #242525;
+}
+
+#concept-banner .button-lern-more:hover .fa-chevron-down {
+    color: #242525;
+}
+
+#concept-banner .button-lern-more .fa-chevron-down {
+    animation: buttonAniamtion 2s linear infinite;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#concept-main-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    top: 65px;
+    padding: 15px;
+}
+
+#concept-main-info .concept-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#concept-main-info .concept-info-container div {
+    width: 40%;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#concept-main-info .concept-info-container div img {
+    width: 100%;
+    height: 500px;
+    transition: 0.5s ease-in-out;
+}
+
+#concept-main-info .concept-info-container div h3 {
+    font-weight: 100;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+#concept-main-info .concept-info-container div p {
+    text-align: justify;
+}
+
+#concept-main-info .concept-info-container div img:hover {
+    transform: scale(1.1);
+}
+
+#technologies {
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#technologies .technologies-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#technologies .technologies-container div {
+    width: 40%;
+    height: auto;
+    min-height: 500px;
+    overflow: hidden;
+
+}
+
+#technologies .technologies-container div h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#technologies .technologies-container div p {
+    text-align: justify;
+}
+
+#technologies .technologies-container div img {
+    width: 100%;
+    height: 500px;
+    transition: 0.5s ease-in-out;
+}
+
+#technologies .technologies-container div img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes buttonAniamtion {
+    100% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    0% {
+        transform: translateY(-50px);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #concept-main-info .concept-info-container {
+        flex-direction: column-reverse;
+    }
+
+    #concept-main-info .concept-info-container div {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    #concept-main-info .concept-info-container div img {
+        height: 400px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    #concept-banner .cocnept-header h3 {
+        font-size: 24px;
+        width: 250px;
+    }
+
+    #concept-banner .concept-borders {
+        width: 80px;
+        right: 15px;
+    }
+
+    #concept-banner .button-lern-more {
+        margin-left: calc(50% - 25px);
+    }
+
+    #concept-main-info .concept-info-container div h3 {
+        margin-top: 50px;
+    }
+
+    #technologies .technologies-container {
+        flex-direction: column;
+    }
+
+    #technologies .technologies-container div {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    #technologies .technologies-container div h3 {
+        margin-top: 50px;
+    }
+
+    #technologies .technologies-container div img {
+        margin-top: 25px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #technologies .technologies-container div img {
+        margin-top: 25px;
+        height: 250px;
+    }
+
+    #concept-main-info .concept-info-container div img {
+        height: 250px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}

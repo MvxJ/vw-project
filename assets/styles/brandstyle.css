@@ -43,13 +43,19 @@ body {
 #animation {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 90vw;
     height: auto;
     min-height: 80vh;
     padding: 15px;
-    border:1px solid red;
-    margin-top: 65px;
     align-items: center;
+    justify-content: center;
+}
+
+#animation h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #animation .animation-wraper {
@@ -89,6 +95,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    margin-top: 75px;
 }
 
 #brands .brands-container {
@@ -176,5 +183,34 @@ body {
     }
     #brands .brands-container h3 {
         margin-top: 25px;
+    }
+
+    #animation .animation-wraper {
+        width: 600px;
+        height: 400px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #animation .animation-wraper .surface {
+        width:3500px;
+    }
+
+    #animation .animation-wraper .car-image {
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #animation .animation-wraper {
+        width: 350px;
+        height: 240px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin-left: calc(50% - 120px);
+    }
+
+    #animation .animation-wraper .car-image {
+        bottom: 15%;
     }
 }
