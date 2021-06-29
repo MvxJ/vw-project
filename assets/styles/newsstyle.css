@@ -92,7 +92,7 @@ body {
 .news-1 .troc-news .image {
     min-width: 40%;
     height: 400px;
-    background-image: url('/assets/img/news/t-roc-cabriollet-1.jpg');
+    background-image: url('../img/news/t-roc-cabriollet-1.jpg');
     background-position: center;
     background-size: cover;
     transition: 0.5s ease-in-out;
@@ -124,7 +124,7 @@ body {
 .technologies-news #technologies-driver {
     width: 40%;
     height: 400px;
-    background-image: url('/assets/img/news/volkswagen-technologies-for-driver.jpg');
+    background-image: url('../img/news/volkswagen-technologies-for-driver.jpg');
     background-position: center;
     background-size: cover;
     transition: 0.5s ease-in-out;
@@ -159,7 +159,7 @@ body {
 .technology-wrapper #new-technology {
     width: 40%;
     height: 400px;
-    background-image: url('/assets/img/news/volkswagen-new-technologies.jpg');
+    background-image: url('../img/news/volkswagen-new-technologies.jpg');
     background-position: center;
     background-size: cover;
     transition: 0.5s ease-in-out;

@@ -61,7 +61,7 @@ body {
 #animation .animation-wraper {
     width: 900px;
     height: 600px;
-    background-image: url('/assets/img/animation/Img_1.png');
+    background-image: url('../img/animation/Img_1.png');
     background-position: center;
     background-size: contain;
     box-shadow:1px 2px 60px rgba(0,0,0 ,0.4);
@@ -72,7 +72,7 @@ body {
 #animation .animation-wraper .surface {
     height: 140px;
     width: 500%;
-    background-image: url('/assets/img/animation/Img_02.png');
+    background-image: url('../img/animation/Img_02.png');
     display: block;
     position: absolute;
     bottom: 0;
