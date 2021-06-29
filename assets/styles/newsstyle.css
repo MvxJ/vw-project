@@ -1,0 +1,233 @@
+body {
+    overflow-x: hidden;
+}
+
+#news-introduction {
+    position: relative;
+    top: 65px;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#news-introduction .news-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+
+#news-introduction .news-wrapper .container {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+#news-introduction .news-wrapper .container h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#news-introduction .news-wrapper .container p {
+    text-align: justify;
+}
+
+#news-introduction .news-wrapper .container-2 {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+    background-image: url('../img/news/volkswagen-news-intro.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.news {
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.news-1 .troc-news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-1 .troc-news .news-row {
+    width: 100vw;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    border:1px solid red;
+}
+
+.news-1 .troc-news .news-row:hover {
+    background-color: #fff;
+}
+
+.news-1 .troc-news  h3 {
+    font-weight: 100;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.news-1 .troc-news p {
+    color: black;
+    font-size: 16px;
+}
+
+.news-1 .troc-news .text {
+    width: 40%;
+    text-align: justify;
+}
+
+.news-1 .troc-news .image {
+    min-width: 40%;
+    height: 400px;
+    background-image: url('/assets/img/news/t-roc-cabriollet-1.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.news-1 .troc-news .news-row .image:hover {
+    transform: scale(1.05);
+}
+
+.technologies-news {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.technologies-news .text {
+    width: 40%;
+    text-align: justify;
+}
+
+.technologies-news .text h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.technologies-news #technologies-driver {
+    width: 40%;
+    height: 400px;
+    background-image: url('/assets/img/news/volkswagen-technologies-for-driver.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.technologies-news #technologies-driver:hover {
+    transform: scale(1.05);
+}
+
+.technology-news-for-driver {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.technology-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.technology-wrapper .text {
+    width: 40%;
+    text-align: justify;
+}
+
+.technology-wrapper .text h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.technology-wrapper #new-technology {
+    width: 40%;
+    height: 400px;
+    background-image: url('/assets/img/news/volkswagen-new-technologies.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.technology-wrapper #new-technology:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 970px) {
+    .technology-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .technology-wrapper .text {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .technology-wrapper #new-technology {
+        width: 100%;
+    }
+
+    .technologies-news {
+        flex-direction: column;
+    }
+
+    .technologies-news .text {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .technologies-news #technologies-driver {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #news-introduction .news-wrapper {
+        flex-direction: column;
+    }
+
+    #news-introduction .news-wrapper .container {
+        width: 100%;
+        margin-top: 450px;
+        height: auto;
+    }
+
+    #news-introduction .news-wrapper .container-2 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .news-1 .troc-news {
+        margin-top: 450px;
+        flex-direction: column-reverse;
+    }
+
+    .news-1 .troc-news {
+        flex-direction: column-reverse;
+    }
+
+    .news-1 .troc-news .text {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .news-1 .troc-news .image {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

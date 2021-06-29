@@ -83,6 +83,15 @@ nav .wrapper {
     color: #a36b4f;
 }
 
+.nav-links li .active {
+    color: #838383;
+    cursor: default;
+}
+
+.nav-links li .active:hover {
+    color: #838383;
+}
+
 .nav-links li:hover .dropdown-box {
     visibility: visible;
     opacity: 1;
