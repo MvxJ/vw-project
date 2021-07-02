@@ -59,6 +59,124 @@ body {
     width: 100vw;
     height: auto;
     min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top :65px;
+    padding: 15px;
+}
+
+.model-info .image-info {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+#golf-8-about {
+    background-image: url('/assets/img/models/golf/volkswagen-golf-8-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#passat-about {
+    background-image: url('/assets/img/models/passat/passat-2018-model.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.model-info .text-info {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+.model-info .text-info h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.model-interior {
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 65px;
+    position: relative;
+}
+
+.model-interior .interior-text {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+.model-interior .interior-text h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.model-interior .interior-image {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+#golf-8-interior {
+    background-image: url('/assets/img/models/golf/volkswagen-golf-8-interior.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#passat-interior {
+    background-image: url('/assets/img/models/passat/passat-2018-interior.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.model-last {
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    position: relative;
+    top: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.model-last .model-last-text {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+.model-last .model-last-text h3 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.model-last .model-last-image {
+    width: 40%;
+    height: auto;
+    min-height: 400px;
+}
+
+#golf-last-image {
+    background-image: url('/assets/img/models/golf/volkswagen-golf-8-gte.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#passat-last-image {
+    background-image: url('/assets/img/models/passat/passat-2018-technology.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 500px) {
