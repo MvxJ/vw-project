@@ -1,0 +1,76 @@
+body {
+    overflow-x: hidden;
+}
+
+.model-intro {
+    width: 100vw;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+}
+
+.model-intro h3 {
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 15px;
+}
+
+.model-intro p {
+    color: white;
+    position: absolute;
+    display: block;
+    bottom: 50px;
+    left: 50px;
+    width: 400px;
+    padding: 15px;
+}
+
+.model-intro .borders {
+    height: 90%;
+    width: 100px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    position: absolute;
+    left: 25px;
+    top: 5%;
+}
+
+#golf-8-intro {
+    background-image: url('/assets/img/models/golf/golf-8-cover.jpg');
+}
+
+#passat-intro {
+    background-image: url('/assets/img/models/passat/passat-2018-cover.jpg');
+}
+
+#tiguan-intro {
+    background-image: url('/assets/img/models/tiguan/tiguan-2020-cover.jpg');
+}
+
+.model-info {
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+}
+
+@media screen and (max-width: 500px) {
+    .model-intro p {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .model-intro h3 {
+        width: 300px;
+        top: 50px;
+        left: 50px;
+        padding: 15px;
+    }
+}
