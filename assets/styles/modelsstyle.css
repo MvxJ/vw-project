@@ -44,15 +44,15 @@ body {
 }
 
 #golf-8-intro {
-    background-image: url('/assets/img/models/golf/golf-8-cover.jpg');
+    background-image: url('../../assets/img/models/golf/golf-8-cover.jpg');
 }
 
 #passat-intro {
-    background-image: url('/assets/img/models/passat/passat-2018-cover.jpg');
+    background-image: url('../../assets/img/models/passat/passat-2018-cover.jpg');
 }
 
 #tiguan-intro {
-    background-image: url('/assets/img/models/tiguan/tiguan-2020-cover.jpg');
+    background-image: url('../../assets/img/models/tiguan/tiguan-2020-cover.jpg');
 }
 
 .model-info {
@@ -75,19 +75,19 @@ body {
 }
 
 #golf-8-about {
-    background-image: url('/assets/img/models/golf/volkswagen-golf-8-image.jpg');
+    background-image: url('../../assets/img/models/golf/volkswagen-golf-8-image.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #passat-about {
-    background-image: url('/assets/img/models/passat/passat-2018-model.jpeg');
+    background-image: url('../../assets/img/models/passat/passat-2018-model.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #tiguan-about {
-    background-image: url('/assets/img/models/tiguan/volkswagen-tiguan-back.jpg');
+    background-image: url('../../assets/img/models/tiguan/volkswagen-tiguan-back.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -136,19 +136,19 @@ body {
 }
 
 #golf-8-interior {
-    background-image: url('/assets/img/models/golf/volkswagen-golf-8-interior.jpg');
+    background-image: url('../../assets/img/models/golf/volkswagen-golf-8-interior.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #passat-interior {
-    background-image: url('/assets/img/models/passat/passat-2018-interior.jpeg');
+    background-image: url('../../assets/img/models/passat/passat-2018-interior.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #tiguan-interior {
-    background-image: url('/assets/img/models/tiguan/volkswagen-tiguan-interior.jpg');
+    background-image: url('../../assets/img/models/tiguan/volkswagen-tiguan-interior.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -185,19 +185,19 @@ body {
 }
 
 #golf-last-image {
-    background-image: url('/assets/img/models/golf/volkswagen-golf-8-gte.jpeg');
+    background-image: url('../../assets/img/models/golf/volkswagen-golf-8-gte.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #passat-last-image {
-    background-image: url('/assets/img/models/passat/passat-2018-technology.jpeg');
+    background-image: url('../../assets/img/models/passat/passat-2018-technology.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 #tiguan-last-image {
-    background-image: url('/assets/img/models/tiguan/volkswagen-tiguan-electric.jpg');
+    background-image: url('../../assets/img/models/tiguan/volkswagen-tiguan-electric.jpg');
     background-position: center;
     background-size: cover;
 }
