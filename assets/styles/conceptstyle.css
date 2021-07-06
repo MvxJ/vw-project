@@ -18,7 +18,7 @@ body {
     left: 50px;
     color: #fff;
     font-size: 38px;
-    font-weight: 100;
+    font-weight: 200;
     width: 400px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 #concept-main-info .concept-info-container div h3 {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 38px;
     margin-bottom: 25px;
 }
@@ -134,7 +134,7 @@ body {
 
 #technologies .technologies-container div h3 {
     font-size: 38px;
-    font-weight: 100;
+    font-weight: 200;
     margin-bottom: 25px;
 }
 
@@ -183,7 +183,6 @@ body {
     }
 
     #concept-banner .cocnept-header h3 {
-        font-size: 24px;
         width: 250px;
     }
 

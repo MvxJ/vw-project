@@ -14,7 +14,7 @@ body {
 .model-intro h3 {
     color: white;
     font-size: 38px;
-    font-weight: 300;
+    font-weight: 400;
     width: 400px;
     position: absolute;
     top: 50px;
@@ -182,6 +182,7 @@ body {
     height: auto;
     min-height: 400px;
     margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 #golf-last-image {
