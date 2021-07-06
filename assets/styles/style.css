@@ -269,7 +269,11 @@ nav .wrapper {
     text-align: center;
 }
 
-.footer-content .row .column .socials ul li:hover {
+.footer-content .row .column .socials ul li a{
+    color: #fff;
+}
+
+.footer-content .row .column .socials ul li a:hover {
     color: #a36b4f;
 }
 
