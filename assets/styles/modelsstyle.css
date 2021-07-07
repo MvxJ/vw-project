@@ -120,6 +120,7 @@ body {
     width: 40%;
     height: auto;
     min-height: 400px;
+    margin-bottom: 25px;
 }
 
 .model-interior .interior-text h3 {
