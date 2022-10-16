@@ -9,6 +9,48 @@ html {
     scroll-behavior: smooth;
 }
 
+.controls {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.controls div {
+    cursor: pointer;
+}
+
+.slider-wideo {
+    height:100%;
+    width: 100%;
+}
+
+.slider-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 10px;
+}
+
+.slide-dot {
+    width:10px;
+    height:10px;
+    border-radius: 15px;
+    background: transparent;
+    border:1px solid #fff;
+}
+
+.current-dot {
+    background-color: #fff;
+}
+
 .to-top {
     position: fixed;
     background-color: #242525;
