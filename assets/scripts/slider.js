@@ -76,11 +76,16 @@ function dotClick(num) {
 const prevSlide = () => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
+    const currentDot = document.querySelector('.current-dot');
+    currentDot.classList.remove('current-dot');
 
     if (current.previousElementSibling) {
         current.previousElementSibling.classList.add('current')
+        currentDot.previousElementSibling.classList.add('current-dot')
     } else {
-        slides[slides.length - 1].classList.add('current')  
+        slides[slides.length - 1].classList.add('current')
+        const dots = document.querySelectorAll('.slide-dot');
+        dots[dots.length - 1].classList.add('current-dot');
     }
     
     setTimeout(() => current.classList.remove(current))
